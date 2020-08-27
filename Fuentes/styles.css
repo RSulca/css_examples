@@ -1,0 +1,34 @@
+* {
+    font-family: 'Tomorrow';
+}
+
+h3 {
+    font-family: "Century Gothic";
+    color: rgb(43, 130, 201);
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    color: green;
+    border: 5px solid white;
+    padding: 15px;
+    background-color: yellow;
+}
+
+p {
+    font-weight: 400;
+    font-family: 'Tomorrow';
+    color: rgb(84, 201, 48);
+}
+
+.e2 {
+    color: grey;
+    word-spacing: 30px;
+}
+
+body {
+    background-color: rgb(228, 200, 228);
+    background-image: url("img/fondo.jpg");
+    background-attachment: fixed;
+}

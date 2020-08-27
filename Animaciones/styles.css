@@ -1,0 +1,65 @@
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(123, 202, 43);
+}
+
+a {
+    position: absolute;
+    left: 50%;
+    background-color: yellow;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px dashed black;
+    text-decoration: none;
+    transition: all 2s;
+}
+
+a:hover {
+    background-color: cornflowerblue;
+    color: white;
+    
+}
+
+p { 
+    position: absolute;
+    
+    text-align: justify;
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    overflow-y: scroll;
+    margin-top: 100px;
+    background-color: yellow;
+    border-radius: 5px;
+    animation-name: desplazar;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes desplazar {
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1000px;
+        transform: rotate(180deg);
+        border-radius: 999px;
+    }
+    60%{
+        background-color: pink;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}

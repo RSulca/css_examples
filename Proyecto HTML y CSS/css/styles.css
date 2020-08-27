@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+            url("fonts/nevis.woff") format("woff"),
+            url("format/nevis.ttf") format("truetype"),
+            url("format/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}       
+
+* {
+    padding: 0px;
+    margin: 0px;
+    max-width: 1366px;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    max-height: 350px;
+}
+
+.logotipo {
+    width: 900px;
+    margin: 0px auto;
+    padding: 25px 0px 25px 0px;
+}
+
+body {
+    background-image: url("../img/paven.png");
+}
+
+header .logotipo h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #71B053;
+    text-transform: uppercase;
+    font-family: "nevis";
+    letter-spacing: 4px;
+    text-shadow: 3px 2px 1px #333333;
+    transition: all 250ms;
+}
+
+header .logotipo h1:hover {
+    text-shadow: 3px 2px 1px #71B053;
+    border: 2px dotted #71B053;
+    padding: 15px;
+}
+
+.logotipo img {
+    display: block;
+    margin: auto;
+    width: 140px;
+    transition: all 250ms;
+}
+
+.logotipo img:hover {
+    width: 180px;
+}
+
+nav .navbar{
+    width: 100%;
+    height: 38px;
+    background-color: #333333;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+nav .navbar ul {
+    list-style: none;
+    width: 1100px;
+    margin: 0px auto;
+}
+
+nav .navbar ul li {
+    float: left;
+    border-right: 1px solid gray;
+    transition: all 250ms;
+}
+
+nav .navbar ul li a {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav .navbar ul li:hover {
+    background-color: #71B053;
+}
+
+nav .navbar ul li:first-child {
+    border-left: 1px solid gray;
+}
+
+nav .navbar ul li ul {
+    font-size: 13px;
+    font-family: sans-serif;
+    display: none;
+    position: absolute;
+    width: 160px;
+    z-index: 1;
+}
+
+nav .navbar ul li:hover ul {
+    display: block;
+}
+
+nav .navbar ul li ul li {
+    float: none;
+    clear: both;
+    background-color: #333333;
+    color: white;
+    border: 0px;
+    border-bottom: 1px solid white;
+
+}
+
+nav .navbar ul li ul li:hover {
+    background-color: #71B053;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.contenido {
+    width: 1150px;
+    margin: 0px auto;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.contenido aside{
+    float: left;
+    width: 15%;
+    padding: 10px;
+    margin-top: 45px;
+    border: 1px solid #F2F3F2;
+    background-color: white;    
+}
+
+.contenido aside .titulo {
+    text-align: center;
+    background-color: #F2F3F2;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 0px 3px 0px;
+    border-top: 1px solid#E2E3E2;
+    border-bottom: 1px solid#E2E3E2;
+}
+
+.contenido aside .login {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenido aside .login a {
+    text-decoration: none;
+    color: white;
+    background-color: #71B053;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.contenido aside .info {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contenido aside a {
+    font-size: 14px;
+    color: #71B053;
+    text-decoration: none;
+}
+
+input {
+    border: 1px solid#E2E3E2;
+    width: 100%;
+}
+
+.last {
+    margin-bottom: 10px;
+}
+
+.panel2 {
+    border-bottom: 1px dashed #E2E3E2;
+    border-top: 1px dashed #E2E3E2;
+    padding: 10px 0px 20px 0px;
+}
+
+.panel2 .titulo {
+    color: blue;
+}
+
+.panel3 {
+    border-bottom: 1px dashed #E2E3E2;
+    padding: 10px 0px 20px 0px;
+}
+
+.panel3 .titulo {
+    color: #A10900;
+}
+
+.panel4 {
+    border-bottom: 1px dashed #E2E3E2;
+    padding: 10px 0px 3px 0px;
+}
+
+.panel4 .info ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#extra a {
+    color: #71B053;
+    text-decoration: none;
+}
+
+.contenido .posts {
+    float: left;
+    margin-top: 45px;
+    width: 65%;
+    margin-left: 120px;
+}
+
+.contenido .posts .post{
+    border: 1px solid #F2F3F2;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 10px 30px 30px 30px;   
+}
+
+.post h3 {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #71B053;
+}
+
+.orange {
+    color: orange !important; 
+}
+
+.green {
+    color: green !important;
+}
+
+.post ul {
+    margin-left: 20px;
+    list-style-image: url("https://img.icons8.com/cotton/15/000000/document.png");
+}
+
+fecha {
+    color: gray;
+}
+
+.s1 , .s2 {
+    width: 35px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+.s2 {
+    margin-left: 651px;
+}
+
+#extra {
+    position: absolute;
+    float: left;
+    width: 170px;
+    padding: 10px;
+    margin-top: 750px;
+    border: 1px solid #F2F3F2;
+    background-color: white;   
+}
+
+.historial {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.contenido a {
+    color: #71B053;
+    text-decoration: none;
+}
+
+
+

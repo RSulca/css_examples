@@ -1,0 +1,651 @@
+@font-face {
+    font-family: "TrebuchetMS.ttf";
+    src: url("fonts/TrebuchetMS.ttf");
+    font-weight: normal;
+    font-style: normal;
+}       
+
+@font-face {
+    font-family: "BebasNeue.otf";
+    src: url("fonts/BebasNeue.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.ttf") format("truetype"),
+        url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("../img/pattern.png");
+}
+
+header {
+    width: 100%;
+    height: 63px;
+    background-color: black;
+    color: white;
+    font-family: "BebasNeue.otf";
+}
+
+.cabecera {
+    width: 1040px;
+    margin: 0px auto;
+}
+
+.logo {
+    float: left;
+    background-color: #37BCF9;
+    width: 180px;
+    margin-top: 7px;
+    cursor: pointer;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.logo:hover {
+    background-color: #E0E0E0;
+    color: black;
+}
+
+.logo:hover .gear {
+    color: black;
+    animation: rotateBellow 300ms linear;
+}
+
+@keyframes rotateBellow {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.gear {
+    font-family: "WebSymbolsRegular";
+    float: left;
+    font-size: 28px;
+    margin: 5px 0px 5px 22px;
+    animation-name: rotar;
+    animation-iteration-count: infinite;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    transition: all 300ms;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo h3 {
+    float: right;
+    font-size: 35px;
+    margin: 5px 60px 0px 0px;
+    letter-spacing: 1px;
+}
+
+.logo:hover h3 {
+    animation: rotateRight 300ms linear;
+}
+
+@keyframes rotateRight {
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.cabecera ul {
+    float: right;
+    list-style: none;
+    margin-right: 160px;
+}
+
+.cabecera ul li {
+    float: left;
+    line-height: 63px;
+    font-size: 21px;
+    margin: 0px 18px 0px 18px;
+    letter-spacing: 1px;
+}
+
+.cabecera ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+.cabecera ul li a:hover {
+    color: #37BCF9;
+    transform: scale(1.3);
+}
+
+#banner {
+    width: 100%;
+}
+
+.sombra {
+    width: 78%;
+    background-image: url("../img/bakbaner.png");
+    margin: 0px auto;
+    border: 10px solid white;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#banner .banner {
+    font-size: 40px;
+    font-family: "BebasNeue.otf";
+    color: white;
+    padding: 20px 0px 20px 0px;
+    letter-spacing: 2px;
+    text-shadow: px 2px 2px black;
+} 
+
+#cards {
+    width: 83%;
+    margin: 0px auto;
+    margin-top: 63px;
+
+}
+
+.card {
+    overflow: hidden;
+    width: 180px;
+    height: 270px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 2px gray;
+    background-color: white;
+    float: left;
+    color: #004F8D;
+    text-align: center;
+    margin: 5px 19px 5px 19px;
+    font-family: "TrebuchetMS.ttf";
+    transition: all 300ms;
+}
+
+.card:hover .category {
+    animation: animation-category 300ms linear;
+}
+
+@keyframes animation-category {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.card .icon {
+    font-family: "WebSymbolsRegular";
+    font-size: 43px;
+    color: black;
+    margin: 23px 0px 23px 0px;
+}
+
+.card .category {
+    font-size: 19px;
+    padding: 20px 0px 20px 0px;
+}
+
+.card .description {
+    font-size: 14px;
+    padding: 0px 10px 0px 10px;
+}
+
+.card:hover .description {
+    animation: animation-description 300ms linear;
+}
+
+@keyframes animation-description {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.card:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+.card:hover .icon {
+    color: #37BCF9;
+    animation: animation-icon 300ms linear;
+}
+
+@keyframes animation-icon {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+aside {
+    float: none;
+    clear: both;
+}
+
+.lateral {
+    width: 30%;
+    float: right;
+    margin-top: 100px;
+}
+
+.contenido {
+    width: 67%;
+    margin: 0px auto;
+    margin-right: 150px;
+}
+
+.titulo {
+    background-color: #E0E0E0;
+    color: black;
+    font-family: "BebasNeue.otf";
+    font-size: 27px;
+    padding: 5px 13px 5px 13px;
+    box-shadow: 3px 3px 0px black;
+    margin-bottom: 13px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.search {
+    width: 90%;
+    height: 30px;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 4px #ccc inset;
+}
+
+.search input[type=text] {
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+.search input[type=button]{
+    font-family: "WebSymbolsRegular";
+    width: 13%;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #ccc;
+    height: 30px;
+    cursor: pointer;
+}
+
+.login {
+    width: 90%;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    padding: 20px 0px 20px 0px;
+}
+
+.login input[type=text], .login input[type=password]  {
+    display: block;
+    width: 78%;
+    height: 20px;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 2px #ccc;
+    margin-bottom: 20px;
+    padding-left: 37px;
+    color: gray;
+    transition: all 200ms;
+}
+
+.login input[type=text]:hover, .login input[type=password]:hover  {
+    color: black;
+}
+
+.login input[type=button] {
+    background: linear-gradient(to bottom, #37BCF9 0%, rgb(85, 85, 245) 100%);
+    padding: 5px 20px 5px 20px;
+    border-top: 1px solid rgb(64, 64, 228);
+    border-bottom: 1px solid rgb(64, 64, 228);
+    color: white;
+    margin-left: 27px;
+    margin-bottom: 15px;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "TrebuchetMS.ttf";
+    transition: all 200ms;
+}
+
+.login input[type=button]:hover {
+    box-shadow: 0px 0px 3px gray;
+}
+
+.login a {
+    margin: 0px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-left: 7px;
+    font-size: 13px;
+    font-family: "TrebuchetMS.ttf";
+    transition: all 200ms;
+}
+
+.login a:hover {
+    color: #37BCF9;
+    text-decoration: underline;
+}
+
+.twitter, .facebook, .youtube , .google,.login .user, .login .pass{
+    font-family: "WebSymbolsRegular";
+}
+
+.login .user {
+    position: absolute;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.login .pass {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.redes{
+    width: 80%;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    min-height: 185px;
+}
+
+.redes div {
+    margin: 10px 0px 10px 20px;
+}
+
+.redes div a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+.redes div:hover .text {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.text {
+    position: absolute;
+    font-family: "TrebuchetMS.ttf";
+    font-size: 12px;
+    padding: 5px;
+    border: 3px double gray;
+    width: 70px;
+    text-align: center;
+    background-color: #ccc;
+    margin-top: -30px;
+    margin-left: 50px;
+    font-weight: bold;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.contenido .panel {
+    width: 80%;
+    margin: 0px auto;
+    height: 120px;
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    margin-bottom: 20px;
+}
+
+section {
+    float: left;
+    width: 65%;
+    margin-left: 33px;
+    margin-top: 110px;
+}
+
+section h4 {
+    background-color: #E0E0E0;
+    color: black;
+    width: 82%;
+    font-family: "BebasNeue.otf";
+    font-size: 35px;
+    text-align: center;
+    padding: 11px 0px 11px 0px;
+    font-weight: 100;
+    box-shadow: 3px 3px 0px black;
+    margin-bottom: 13px;
+    margin-left: 115px;
+    letter-spacing: 1px;
+}
+
+article {
+    width: 77%;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-left: 125px;
+    margin-top: 30px;
+    box-shadow: 1px 1px 1px gray;
+    padding: 10px;
+    font-family: "TrebuchetMS.ttf";
+}
+
+article h5 {
+    font-size: 20px;
+    margin: 0px 0px 13px 0px;
+    float: left;
+}
+
+article h5 a {
+    color: #005796;
+    text-decoration: none;
+}
+
+article .fecha {
+    float: right;
+    font-size: 12px;
+    background-color: #393D3F;
+    color: white;
+    padding: 8px;
+    margin-top: -10px;
+    margin-right: -11px;
+    border-bottom-left-radius: 5px;
+}
+
+article p {
+    font-size: 14px;
+    clear: both;
+}
+
+article p a {
+    text-decoration: none;
+    color: #005796;
+}
+
+#logo {
+    width: 77%;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-left: 125px;
+    margin-top: 30px;
+    box-shadow: 1px 1px 1px gray;
+    text-align: center;
+    font-family: "BebasNeue.otf";
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    transition: all 1000ms;
+}
+
+#logo:hover {
+    background-color: #393D3F;
+    border: 5px solid skyblue;
+    border-radius: 240px;
+    animation: animation-logo 3s linear infinite;
+}
+
+@keyframes animation-logo{
+    0%{
+        border-color: skyblue;
+    }
+    25%{
+        border-color: rgb(62, 216, 16);
+    }
+    50%{
+        border-color: rgb(10, 221, 211);
+    }
+    75%{
+        border-color: rgb(203, 72, 230);
+    }
+    100%{
+        border-color: skyblue;
+    }
+}
+
+#logo:hover a {
+    color: white;
+}
+
+#logo a {
+    display: block;
+    color: #005796;
+    text-decoration: none;
+    padding: 25px 35px 25px 35px;
+}
+
+footer {
+    clear: both;
+    width: 100%;    
+    height: 380px;
+    background-color: black;
+    padding: 15px 0px 15px 0px;
+}
+
+.avisos {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.post {
+    width: 32%;
+    float: left;
+}
+
+.post h5 {
+    width: 80%;
+    height: 40px;
+    margin: 0px auto;
+    font-family: "BebasNeue.otf";
+    color: black;
+    font-size: 35px;
+    background-color: #E0E0E0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    padding: 3px 0px 3px 0px;
+}
+
+.post #menu li a {
+    color: #37BCF9;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 300ms;
+}
+
+.post #menu li:hover a {
+    margin-left: 50px;
+    color: white;
+}
+
+.post #menu {
+    list-style-type: disc  ;
+    color: #37BCF9;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.post #menu li {
+    margin: 10px 0px 25px 0px;
+    font-family: "TrebuchetMS.ttf";
+    font-size: 22px;
+}
+
+.map {
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.html {
+    width: 70%;
+    margin: 20px 0px 0px 60px;
+}
+
+.post #navegate {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+
+.post #navegate li {
+    display: inline;
+}  
+
+.post #navegate li a img {
+    width: 39px;
+}
+
+.post p {
+    color: white;
+    font-family: "TrebuchetMS.ttf";
+    font-size: 13px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.post p a {
+    text-decoration: none;
+    color: #37BCF9;
+}

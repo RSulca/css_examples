@@ -1,0 +1,27 @@
+* {
+    font-family: 'Tomorrow';
+}
+
+.caja {
+    width: 150px;
+    height: 250px;
+    background-color: yellowgreen;
+    border: 7px solid yellow;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+    display: block;
+}
+
+
+div {
+    text-align: center;
+}
+
+.cajas {
+    max-width: 900px;
+}
+
+h1 {
+    border-bottom: 3px black solid;
+}
